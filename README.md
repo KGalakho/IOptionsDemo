@@ -6,7 +6,6 @@ A demonstration project for using the `IOptions<T>`, `IOptionsSnapshot<T>`, and 
 
 ## Table of Contents
 
-- [Project Structure](#project-structure)
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -19,33 +18,6 @@ A demonstration project for using the `IOptions<T>`, `IOptionsSnapshot<T>`, and 
 - [Testing](#testing)
 - [Extending the Demo](#extending-the-demo)
 - [References](#references)
-
----
-
-## Project Structure
-
-IOptionsDemo/
-|
-├── IOptionsDemo/ # Main ASP.NET Core project
-|   ├── Configuration/ # Options classes (e.g., FeatureOptions)
-|   ├── Controllers/ # API controllers
-│   │   └── IOptionsDemoController.cs
-|   ├── Services/ # Services using options patterns
-│   │   ├── StaticOptionsService.cs         # IOptions<T>
-│   │   ├── SnapshotOptionsService.cs       # IOptionsSnapshot<T>
-│   │   └── MonitorOptionsService.cs        # IOptionsMonitor<T>
-│   ├── appsettings.json
-│   ├── Program.cs # App entry endpoint and DI 
-│   └── IOptionsVariantsDemo.csproj
-├── IOptionsDemo.Tests/            # xUnit test project
-|    ├── StaticOptionsServiceTests.cs
-|    ├── SnapshotOptionsServiceTests.cs
-|    ├── MonitorOptionsServiceTests.cs
-|    └── IOptionsDemo.Tests.csproj
-|
-├── README.md
-└── IOptionsDemo.sln
-
 
 ---
 
