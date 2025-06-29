@@ -192,4 +192,4 @@ This project is for demonstration purposes and is not licensed for production us
 
 🧑‍💻 Author
 
-Created by Khadidiatou Galakho — Senior Consultant, Full-Stack Development.
+Created by Khadidiatou Galakho — .NET Senior Consultant.
