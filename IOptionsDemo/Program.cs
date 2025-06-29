@@ -8,21 +8,24 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<FeatureOptions>(builder.Configuration
     .GetSection(FeatureOptions.SectionName));
 
-
-builder.Services.AddSingleton<StaticOptionsService>();       // IOptions<T>
-builder.Services.AddScoped<SnapshotOptionsService>();        // IOptionsSnapshot<T>
-builder.Services.AddSingleton<MonitorOptionsService>();      // IOptionsMonitor<T>
+builder.Services.AddSingleton<StaticOptionsService>();       // IOptions<T>
+builder.Services.AddScoped<SnapshotOptionsService>();        // IOptionsSnapshot<T>
+builder.Services.AddSingleton<MonitorOptionsService>();      // IOptionsMonitor<T>
 
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+
+// Add Swagger/OpenAPI services
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    // Enable Swagger and Swagger UI
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
