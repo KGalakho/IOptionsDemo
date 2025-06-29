@@ -161,7 +161,3 @@ dotnet test
 ## License
 
 This project is for demonstration purposes and is not licensed for production use.
-
-🧑‍💻 Author
-
-Created by Khadidiatou Galakho — .NET Senior Consultant.
