@@ -66,7 +66,7 @@ A demonstration project for using the `IOptions<T>`, `IOptionsSnapshot<T>`, and 
 
 
 5. **Access the API:**
-   - Open [https://localhost:7172/swagger](https://localhost:7172/swagger) (or the URL shown in the console) to view the OpenAPI UI.
+   - Open [https://localhost:7172/swagger](https://localhost:7172/swagger) (or the URL shown in the console) to view the Swagger UI.
 
 ---
 
